@@ -5,7 +5,7 @@ services:
     plan: starter
     region: oregon
     pythonVersion: "3.11"
-    buildCommand: pip install --upgrade pip setuptools wheel && pip install --only-binary=all -r requirements-minimal.txt
+    buildCommand: pip install --upgrade pip && pip install -r requirements-ultramin.txt
     startCommand: cd backend && python main.py
     healthCheckPath: /api/health
     envVars:

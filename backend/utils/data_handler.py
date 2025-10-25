@@ -4,7 +4,13 @@ Handles data fetching, processing, and standardization from data.gov.in APIs
 Supports heterogeneous data sources: CSV, JSON, XLS
 """
 
-import pandas as pd
+try:
+    import pandas as pd
+    PANDAS_AVAILABLE = True
+except ImportError:
+    PANDAS_AVAILABLE = False
+    print("Warning: pandas not available, using fallback data handling")
+
 import requests
 import json
 import os
