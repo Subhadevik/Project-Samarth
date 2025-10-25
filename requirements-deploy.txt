@@ -1,0 +1,29 @@
+# Deployment-optimized requirements for Project Samarth
+# Compatible with Python 3.11
+
+# Web Framework
+Flask==2.3.3
+Flask-CORS==4.0.0
+
+# Data Processing - Compatible versions
+pandas==2.0.3
+numpy==1.24.4
+
+# HTTP Requests
+requests==2.31.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Production Servers
+gunicorn==21.2.0
+waitress==2.1.2
+
+# Additional Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Build dependencies (help with compilation)
+setuptools>=65.0.0
+wheel>=0.37.0
+Cython>=0.29.0
