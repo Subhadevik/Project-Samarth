@@ -1,0 +1,27 @@
+# Simplified requirements for deployment compatibility
+# Uses pre-compiled wheels to avoid build issues
+
+# Web Framework
+Flask==2.3.3
+Flask-CORS==4.0.0
+
+# Data Processing - Use versions with pre-built wheels
+pandas==1.5.3
+numpy==1.24.3
+
+# HTTP Requests
+requests==2.31.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Production Server
+gunicorn==21.2.0
+
+# Basic utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Essential build tools
+setuptools==68.2.2
+wheel==0.41.2
