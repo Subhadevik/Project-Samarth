@@ -49,9 +49,9 @@ cd backend && python main.py
 docker-compose up -d
 ```
 
-### **Production with Gunicorn**
+### **Production with Streamlit**
 ```bash
-cd backend && gunicorn --bind 0.0.0.0:5000 main:app
+streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0
 ```
 
 ## 🔧 Environment Variables (Optional)
