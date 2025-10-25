@@ -1,0 +1,51 @@
+state,district,crop,year,production,area,yield
+Uttar Pradesh,Agra,Wheat,2020,1250000,280000,4464
+Uttar Pradesh,Aligarh,Wheat,2020,1180000,265000,4453
+Uttar Pradesh,Allahabad,Rice,2020,890000,320000,2781
+Uttar Pradesh,Bareilly,Sugarcane,2020,3200000,45000,71111
+Uttar Pradesh,Gorakhpur,Rice,2020,1100000,380000,2895
+West Bengal,Hooghly,Rice,2020,1320000,285000,4632
+West Bengal,Murshidabad,Rice,2020,1580000,340000,4647
+West Bengal,Nadia,Rice,2020,1250000,270000,4630
+West Bengal,North 24 Parganas,Rice,2020,1100000,240000,4583
+West Bengal,South 24 Parganas,Rice,2020,980000,215000,4558
+Punjab,Amritsar,Wheat,2020,1450000,185000,7838
+Punjab,Ludhiana,Wheat,2020,1680000,215000,7814
+Punjab,Patiala,Rice,2020,1250000,165000,7576
+Punjab,Sangrur,Wheat,2020,1320000,170000,7765
+Punjab,Jalandhar,Rice,2020,1180000,155000,7613
+Haryana,Karnal,Wheat,2020,1220000,148000,8243
+Haryana,Sirsa,Cotton,2020,560000,85000,6588
+Haryana,Hisar,Wheat,2020,980000,120000,8167
+Haryana,Sonipat,Rice,2020,720000,95000,7579
+Haryana,Rohtak,Wheat,2020,850000,105000,8095
+Maharashtra,Ahmednagar,Sugarcane,2020,8500000,125000,68000
+Maharashtra,Kolhapur,Sugarcane,2020,7200000,105000,68571
+Maharashtra,Pune,Sugarcane,2020,6800000,98000,69388
+Maharashtra,Sangli,Sugarcane,2020,5900000,85000,69412
+Maharashtra,Solapur,Cotton,2020,420000,68000,6176
+Karnataka,Raichur,Cotton,2020,890000,85000,10471
+Karnataka,Bellary,Cotton,2020,750000,72000,10417
+Karnataka,Gulbarga,Cotton,2020,680000,65000,10462
+Karnataka,Bijapur,Cotton,2020,1250000,120000,10417
+Karnataka,Dharwad,Cotton,2020,580000,55000,10545
+Gujarat,Bharuch,Cotton,2020,1120000,105000,10667
+Gujarat,Surat,Cotton,2020,980000,92000,10652
+Gujarat,Ahmedabad,Cotton,2020,850000,80000,10625
+Gujarat,Rajkot,Cotton,2020,1350000,127000,10630
+Gujarat,Junagadh,Cotton,2020,780000,73000,10685
+Rajasthan,Ganganagar,Wheat,2020,1850000,210000,8810
+Rajasthan,Hanumangarh,Wheat,2020,1680000,190000,8842
+Rajasthan,Alwar,Bajra,2020,420000,580000,724
+Rajasthan,Bharatpur,Wheat,2020,980000,115000,8522
+Rajasthan,Jaipur,Bajra,2020,380000,520000,731
+Madhya Pradesh,Indore,Soybean,2020,680000,520000,1308
+Madhya Pradesh,Ujjain,Soybean,2020,590000,450000,1311
+Madhya Pradesh,Dewas,Soybean,2020,520000,395000,1316
+Madhya Pradesh,Shajapur,Soybean,2020,480000,365000,1315
+Madhya Pradesh,Ratlam,Soybean,2020,420000,320000,1313
+Tamil Nadu,Thanjavur,Rice,2020,980000,185000,5297
+Tamil Nadu,Tiruvarur,Rice,2020,850000,160000,5313
+Tamil Nadu,Nagapattinam,Rice,2020,720000,135000,5333
+Tamil Nadu,Cuddalore,Rice,2020,580000,110000,5273
+Tamil Nadu,Villupuram,Rice,2020,650000,125000,5200

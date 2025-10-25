@@ -1,0 +1,51 @@
+state,crop,year,season,production,area,yield
+Uttar Pradesh,Rice,2020,Kharif,14500000,5800000,2500
+West Bengal,Rice,2020,Kharif,15200000,5400000,2815
+Punjab,Wheat,2020,Rabi,17800000,3500000,5086
+Haryana,Wheat,2020,Rabi,12200000,2500000,4880
+Maharashtra,Sugarcane,2020,Annual,80500000,1200000,67083
+Karnataka,Cotton,2020,Kharif,6200000,600000,10333
+Gujarat,Cotton,2020,Kharif,8500000,800000,10625
+Rajasthan,Bajra,2020,Kharif,3200000,4500000,711
+Madhya Pradesh,Soybean,2020,Kharif,6800000,5600000,1214
+Tamil Nadu,Rice,2020,Samba,3800000,1900000,2000
+Uttar Pradesh,Rice,2019,Kharif,14200000,5750000,2470
+West Bengal,Rice,2019,Kharif,15000000,5350000,2804
+Punjab,Wheat,2019,Rabi,17600000,3480000,5057
+Haryana,Wheat,2019,Rabi,12000000,2480000,4839
+Maharashtra,Sugarcane,2019,Annual,83200000,1180000,70508
+Karnataka,Cotton,2019,Kharif,5800000,580000,10000
+Gujarat,Cotton,2019,Kharif,8200000,780000,10513
+Rajasthan,Bajra,2019,Kharif,3000000,4400000,682
+Madhya Pradesh,Soybean,2019,Kharif,6500000,5400000,1204
+Tamil Nadu,Rice,2019,Samba,3600000,1850000,1946
+Uttar Pradesh,Rice,2018,Kharif,13900000,5700000,2439
+West Bengal,Rice,2018,Kharif,14800000,5300000,2792
+Punjab,Wheat,2018,Rabi,17400000,3460000,5029
+Haryana,Wheat,2018,Rabi,11800000,2460000,4797
+Maharashtra,Sugarcane,2018,Annual,81000000,1160000,69828
+Karnataka,Cotton,2018,Kharif,5500000,560000,9821
+Gujarat,Cotton,2018,Kharif,7900000,760000,10395
+Rajasthan,Bajra,2018,Kharif,2800000,4300000,651
+Madhya Pradesh,Soybean,2018,Kharif,6200000,5200000,1192
+Tamil Nadu,Rice,2018,Samba,3400000,1800000,1889
+Uttar Pradesh,Rice,2017,Kharif,13600000,5650000,2407
+West Bengal,Rice,2017,Kharif,14600000,5250000,2781
+Punjab,Wheat,2017,Rabi,17200000,3440000,5000
+Haryana,Wheat,2017,Rabi,11600000,2440000,4754
+Maharashtra,Sugarcane,2017,Annual,78800000,1140000,69123
+Karnataka,Cotton,2017,Kharif,5200000,540000,9630
+Gujarat,Cotton,2017,Kharif,7600000,740000,10270
+Rajasthan,Bajra,2017,Kharif,2600000,4200000,619
+Madhya Pradesh,Soybean,2017,Kharif,5900000,5000000,1180
+Tamil Nadu,Rice,2017,Samba,3200000,1750000,1829
+Uttar Pradesh,Rice,2016,Kharif,13300000,5600000,2375
+West Bengal,Rice,2016,Kharif,14400000,5200000,2769
+Punjab,Wheat,2016,Rabi,17000000,3420000,4971
+Haryana,Wheat,2016,Rabi,11400000,2420000,4711
+Maharashtra,Sugarcane,2016,Annual,76500000,1120000,68304
+Karnataka,Cotton,2016,Kharif,4900000,520000,9423
+Gujarat,Cotton,2016,Kharif,7300000,720000,10139
+Rajasthan,Bajra,2016,Kharif,2400000,4100000,585
+Madhya Pradesh,Soybean,2016,Kharif,5600000,4800000,1167
+Tamil Nadu,Rice,2016,Samba,3000000,1700000,1765

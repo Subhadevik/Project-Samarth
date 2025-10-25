@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Samarth - Agricultural Intelligence Q&A</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link href="static/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-graph-up-arrow me-2"></i>
+                Project Samarth
+            </a>
+            <div class="navbar-text">
+                <span class="badge bg-light text-success">Agricultural Intelligence</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="mb-0">Quick Examples</h6>
+                    </div>
+                    <div class="card-body p-2">
+                        <div id="example-queries" class="d-grid gap-2">
+                            <!-- Examples will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h6 class="mb-0">Data Sources</h6>
+                    </div>
+                    <div class="card-body p-2">
+                        <small class="text-muted">
+                            <div class="mb-2">
+                                <i class="bi bi-database me-1"></i>
+                                Ministry of Agriculture & Farmers Welfare
+                            </div>
+                            <div class="mb-2">
+                                <i class="bi bi-cloud-rain me-1"></i>
+                                India Meteorological Department
+                            </div>
+                            <div>
+                                <i class="bi bi-globe me-1"></i>
+                                data.gov.in
+                            </div>
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Chat Interface -->
+            <div class="col-md-9 col-lg-10">
+                <div class="card h-100">
+                    <div class="card-header bg-success text-white">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">
+                                <i class="bi bi-chat-dots me-2"></i>
+                                Agricultural Intelligence Assistant
+                            </h5>
+                            <div class="d-flex align-items-center">
+                                <span id="status-indicator" class="badge bg-light text-success me-2">
+                                    <i class="bi bi-circle-fill me-1"></i>Ready
+                                </span>
+                                <button class="btn btn-outline-light btn-sm" onclick="clearChat()">
+                                    <i class="bi bi-trash"></i> Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body d-flex flex-column" style="height: 70vh;">
+                        <!-- Chat Messages -->
+                        <div id="chat-messages" class="flex-grow-1 overflow-auto mb-3">
+                            <div class="assistant-message">
+                                <div class="message-bubble assistant">
+                                    <div class="d-flex align-items-start">
+                                        <i class="bi bi-robot me-2 mt-1"></i>
+                                        <div>
+                                            <strong>Samarth Assistant</strong>
+                                            <p class="mb-1">Hello! I'm your agricultural intelligence assistant. I can help you analyze India's agricultural economy and climate patterns using real government data.</p>
+                                            <p class="mb-0"><strong>Try asking me:</strong></p>
+                                            <ul class="mb-0">
+                                                <li>Compare rainfall between states</li>
+                                                <li>Find top crop-producing districts</li>
+                                                <li>Analyze production trends over time</li>
+                                                <li>Explore weather-agriculture correlations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Input Area -->
+                        <div class="input-group">
+                            <input type="text" 
+                                   id="query-input" 
+                                   class="form-control" 
+                                   placeholder="Ask me about Indian agriculture and climate data..."
+                                   onkeypress="handleKeyPress(event)">
+                            <button class="btn btn-success" onclick="submitQuery()" id="submit-btn">
+                                <i class="bi bi-send"></i> Ask
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Data Visualization -->
+    <div class="modal fade" id="dataModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dataModalTitle">Data Visualization</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-content">
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="downloadData()">
+                        <i class="bi bi-download"></i> Download Data
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="static/script.js"></script>
+</body>
+</html>
