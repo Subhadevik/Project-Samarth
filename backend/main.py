@@ -18,37 +18,14 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Import our custom modules
-try:
-    from utils.data_handler import DataHandler
-    from utils.query_engine import QueryEngine
+from utils import DataHandler, QueryEngine, PANDAS_AVAILABLE
+
+if PANDAS_AVAILABLE:
+    logger.info("Full features loaded successfully with pandas")
     FULL_FEATURES = True
-    logger.info("Full features loaded successfully")
-except ImportError as e:
-    logger.warning(f"Full features not available: {e}")
-    try:
-        from utils.simple_data_handler import SimpleDataHandler as DataHandler
-        from utils.simple_query_engine import SimpleQueryEngine as QueryEngine
-        FULL_FEATURES = False
-        logger.info("Using simplified features for deployment")
-    except ImportError as e2:
-        logger.error(f"Could not load any data handler: {e2}")
-        # Create a minimal fallback
-        class MinimalDataHandler:
-            def __init__(self, *args, **kwargs):
-                pass
-        class MinimalQueryEngine:
-            def __init__(self, *args, **kwargs):
-                pass
-            def process_query(self, query):
-                return {
-                    'success': True,
-                    'answer': 'System is starting up. Agricultural data processing will be available shortly.',
-                    'data': [],
-                    'citations': []
-                }
-        DataHandler = MinimalDataHandler
-        QueryEngine = MinimalQueryEngine
-        FULL_FEATURES = False
+else:
+    logger.info("Using simplified features for deployment (no pandas)")
+    FULL_FEATURES = False
 
 # Initialize Flask app
 app = Flask(__name__, 
